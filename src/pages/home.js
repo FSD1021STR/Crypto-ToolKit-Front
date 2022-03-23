@@ -5,7 +5,7 @@ import TopCard from "../components/topCard";
 
 const Home = () => {
 
-    const [topCoins, setTopCoins]= useState([])
+    // const [topCoins, setTopCoins]= useState([])
 
     // useEffect(() => {
         
