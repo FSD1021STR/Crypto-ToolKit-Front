@@ -7,20 +7,20 @@ const Home = () => {
 
     const [topCoins, setTopCoins]= useState([])
 
-    useEffect(() => {
+    // useEffect(() => {
         
-        const requestOptions = {
-            method: "GET",
-            headers: { "Content-Type": "application/json" }
-        };
+    //     const requestOptions = {
+    //         method: "GET",
+    //         headers: { "Content-Type": "application/json" }
+    //     };
 
-        fetch(
-            `http://localhost:8000/coins/toplist24h`, 
-            requestOptions
-        )
-        .then((response) => (response.json()))
-        .then((json) => setTopCoins(json))
-    },[])
+    //     fetch(
+    //         `http://localhost:8000/coins/toplist24h`, 
+    //         requestOptions
+    //     )
+    //     .then((response) => (response.json()))
+    //     .then((json) => setTopCoins(json))
+    // },[])
 
     return (
         <div className="home">
@@ -30,7 +30,7 @@ const Home = () => {
                     <source src={video}/>
                 </video>
             </div>
-            <div className="topList">
+            {/* <div className="topList">
                 <h2>Top List</h2>
                 <div className="topCoins">
                     {topCoins?.map(coin => (
@@ -41,7 +41,7 @@ const Home = () => {
                             id={coin.Id}/>
                     ))}
                 </div>
-            </div>
+            </div> */}
             
         </div>
         )
