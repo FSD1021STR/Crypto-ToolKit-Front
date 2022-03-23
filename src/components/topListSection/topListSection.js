@@ -1,4 +1,4 @@
-import './topListSeccion.css';
+import './topListSection.css';
 import React, {useEffect, useState} from "react";
 import TopCard from "../topCard/topCard";
 

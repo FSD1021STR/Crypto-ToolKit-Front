@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './introSeccion.module.css'
+import styles from './introSection.module.css'
 import video from "../../videos/videoslide.mp4";
 
 const IntroSection = () => {

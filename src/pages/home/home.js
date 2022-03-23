@@ -1,7 +1,7 @@
 import "./home.css";
 import React from "react";
-import IntroSection from "../../components/introSeccion/introSeccion";
-import TopListSection from "../../components/topListSeccion/topListSeccion";
+import IntroSection from "../../components/introSection/introSection";
+import TopListSection from "../../components/topListSection/topListSection";
 
 const Home = () => {
   return (
