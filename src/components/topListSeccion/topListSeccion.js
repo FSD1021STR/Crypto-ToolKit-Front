@@ -11,7 +11,10 @@ const TopListSection = () => {
       headers: { "Content-Type": "application/json" },
     };
 
-    fetch(`http://localhost:8000/coins/toplist24h`, requestOptions)
+    fetch(
+      `https://crypto-toolkit.herokuapp.com/coins/toplist24h`,
+      requestOptions
+    )
       .then((response) => response.json())
       .then((json) => {
         setTopCoins(json.Data);
