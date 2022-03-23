@@ -1,7 +1,6 @@
 import React from 'react'
 
 const TopCard = (props) => {
-    console.log(props)
     return(
         
         <div className='topCard'>

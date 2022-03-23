@@ -20,7 +20,6 @@ const Home = () => {
         )
         .then((response) => (response.json()))
         .then((json) => {
-            console.log(json)
             setTopCoins(json.Data)})
         
     },[])
