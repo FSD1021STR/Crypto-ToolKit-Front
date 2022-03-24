@@ -4,11 +4,12 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-color: grey;
+  background-color: rgb(10, 26, 36);
+  height: 60px;
 }
 
 .logo {
-  width: 50px;
+  width: 160px;
   height: 50px;
 }
 
@@ -21,18 +22,35 @@
 .link {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: whitesmoke;
+  display: none;
 }
 
 @media only screen and (min-width: 1000px) {
   .navbar {
     height: 70px;
     width: 100%;
-    background-color: grey;
   }
 
   .logo {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 60px;
+  }
+
+  .links {
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    gap: 40px;
+  }
+
+  .link {
+    font-size: larger;
+    font-weight: 100;
+    display: block;
+  }
+
+  .link:hover {
+    color: rgb(40, 210, 148);
   }
 }
