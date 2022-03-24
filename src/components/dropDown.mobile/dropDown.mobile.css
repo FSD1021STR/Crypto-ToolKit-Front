@@ -1,10 +1,65 @@
 .DropDownListContainer {
-  background-color: rgb(9, 93, 189);
   position: absolute;
   width: 100%;
   height: 100%;
+  background-color: rgb(17, 42, 58);
   left: 0;
   top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#transition {
+  transition-timing-function: linear;
+}
+
+.DropDownHeadera {
+  position: absolute;
+  right: 0;
+  padding: 40px;
+}
+
+.bars {
+  color: whitesmoke;
+}
+
+.listItem {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.DropDownList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin-top: 100px;
+}
+
+.linkDrop {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.loginMb {
+  background-color: rgb(40, 210, 148);
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  border-radius: 5px;
+}
+
+.loginMb:hover {
+  background-color: rgb(138, 187, 169);
+}
+
+.linkDrop:hover {
+  background-color: rgb(40, 210, 148);
 }
 
 @media only screen and (min-width: 1000px) {

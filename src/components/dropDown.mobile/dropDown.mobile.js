@@ -1,3 +1,5 @@
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import LoginMobile from "../loginMobile/loginMobile";
@@ -13,25 +15,33 @@ const DropDown = () => {
     console.log(isOpen);
   };
 
+  const off = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className="dropDownContainer">
       <div onClick={toggling} className="DropDownHeader">
-        Menu
+        <FontAwesomeIcon className="bars" icon={faBars} />
       </div>
       {isOpen && (
         <div className="DropDownListContainer">
-          <div onClick={toggling} className="DropDownHeader">
-            X
+          <div onClick={off} className="DropDownHeadera">
+            <FontAwesomeIcon className="bars " icon={faXmark} />
           </div>
           <ul className="DropDownList">
-            <li onClick={toggling} className="listItem">
-              <Link to="/">Home</Link>
-            </li>
-            <li onClick={toggling} className="listItem">
-              <Link to="/markets">Markets</Link>
-            </li>
-            <li onClick={toggling} className="listItem">
+            <li onClick={off} className="loginMb">
               <LoginMobile />
+            </li>
+            <li onClick={off} className="listItem">
+              <Link className="linkDrop" to="/">
+                Home
+              </Link>
+            </li>
+            <li onClick={toggling} className="listItem">
+              <Link className="linkDrop" to="/markets">
+                Markets
+              </Link>
             </li>
           </ul>
         </div>
