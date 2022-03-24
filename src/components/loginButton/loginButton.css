@@ -1,0 +1,22 @@
+button {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  button {
+    font-size: larger;
+    display: block;
+    background-color: rgb(40, 210, 148);
+    width: 90px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    /* font-weight: bolder; */
+  }
+
+  button:hover {
+    background-color: rgb(29, 149, 105);
+    color: whitesmoke;
+    font-weight: 300;
+  }
+}
