@@ -1,4 +1,5 @@
 import React from "react";
+import "./topCard.css";
 
 const TopCard = (props) => {
   return (
@@ -7,6 +8,7 @@ const TopCard = (props) => {
       <p>{props.FullName}</p>
       <p>{props.Name}</p>
       <p>{props.Id}</p>
+      <p className="price">{props.Price} $</p>
     </div>
   );
 };
