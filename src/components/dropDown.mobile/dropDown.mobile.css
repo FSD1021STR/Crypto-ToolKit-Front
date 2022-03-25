@@ -28,6 +28,16 @@
 .listItem {
   color: whitesmoke;
   text-decoration: none;
+
+  width: 100px;
+}
+
+.AweIcon {
+  margin-right: 15px;
+}
+
+.AweIcon:hover {
+  color: rgb(40, 210, 148);
 }
 
 .DropDownList {

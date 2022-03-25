@@ -1,4 +1,11 @@
-import { faBars, faXmark, faHouse } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faXmark,
+  faHouse,
+  faChartArea,
+  faMapMarkedAlt,
+  faCoins,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
@@ -35,12 +42,13 @@ const DropDown = () => {
             </li>
             <li onClick={off} className="listItem">
               <Link className="linkDrop" to="/">
-                <FontAwesomeIcon icon={faHouse} />
+                <FontAwesomeIcon className="AweIcon" icon={faHouse} />
                 Home
               </Link>
             </li>
             <li onClick={toggling} className="listItem">
               <Link className="linkDrop" to="/markets">
+                <FontAwesomeIcon className="AweIcon" icon={faCoins} />
                 Markets
               </Link>
             </li>
