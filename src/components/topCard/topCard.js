@@ -8,6 +8,7 @@ const TopCard = (props) => {
       <p>{props.FullName}</p>
       <p>{props.Name}</p>
       <p>{props.Id}</p>
+      <p>{props.Change24h}</p>
       <p className="price">{props.Price} $</p>
     </div>
   );

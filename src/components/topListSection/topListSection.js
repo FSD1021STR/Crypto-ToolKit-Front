@@ -33,6 +33,7 @@ const TopListSection = () => {
         <p className="coin-name">FullName</p>
         <p className="coin-name">Name</p>
         <p className="coin-name">Id</p>
+        <p className="coin-name">24h Change</p>
         <p className="coin-price">Price</p>
       </div>
 
@@ -45,6 +46,7 @@ const TopListSection = () => {
               FullName={coin.CoinInfo.FullName}
               Name={coin.CoinInfo.Name}
               Id={coin.CoinInfo.Id}
+              Change24h={coin.DISPLAY.USD.CHANGEPCT24HOUR}
               Price={coin.RAW.USD.PRICE}
             />
           );
