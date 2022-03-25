@@ -16,8 +16,6 @@ const DropDown = () => {
 
   const toggling = () => {
     setIsOpen(!isOpen);
-    console.log(toggling);
-    console.log(isOpen);
   };
 
   const off = () => {
