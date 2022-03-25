@@ -1,9 +1,9 @@
 import React from "react";
+import styles from "./markets.module.css";
+import IntroMarket from "../../components/introMarkets/introMarkets";
 
 const Markets = () => {
-    return (
-        <h1> Markets </h1>
-    )
-}
+  return <IntroMarket />;
+};
 
 export default Markets;
