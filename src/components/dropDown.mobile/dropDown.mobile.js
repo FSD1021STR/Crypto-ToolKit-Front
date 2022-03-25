@@ -2,8 +2,6 @@ import {
   faBars,
   faXmark,
   faHouse,
-  faChartArea,
-  faMapMarkedAlt,
   faCoins,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
