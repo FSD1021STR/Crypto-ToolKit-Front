@@ -27,7 +27,7 @@ img {
   transform: scale(1.04);
   transition: 0.3s ease-in-out;
   cursor: pointer;
-  background-color: #18191b;
+  background-color: rgb(20, 51, 70);
 }
 
 @media screen and (max-width: 480px) {
