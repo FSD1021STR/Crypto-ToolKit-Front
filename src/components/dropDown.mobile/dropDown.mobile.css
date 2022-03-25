@@ -41,25 +41,7 @@
 
 .linkDrop {
   text-decoration: none;
-  color: whitesmoke;
-}
-
-.loginMb {
-  background-color: rgb(40, 210, 148);
-  width: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: larger;
-  border-radius: 5px;
-}
-
-.loginMb:hover {
-  background-color: rgb(138, 187, 169);
-}
-
-.linkDrop:hover {
-  background-color: rgb(40, 210, 148);
+  color: rgb(158, 146, 146);
 }
 
 @media only screen and (min-width: 1000px) {

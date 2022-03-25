@@ -1,4 +1,4 @@
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark, faHouse } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
@@ -35,6 +35,7 @@ const DropDown = () => {
             </li>
             <li onClick={off} className="listItem">
               <Link className="linkDrop" to="/">
+                <FontAwesomeIcon icon={faHouse} />
                 Home
               </Link>
             </li>
