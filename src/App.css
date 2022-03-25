@@ -1,6 +1,10 @@
 :root {
+  /* Colores */
   --color-primary: #fcd535;
   --color-background: rgb(6, 12, 19);
+
+  /*Tamaño Fuentes */
+  --h1-size: 35px;
 }
 
 * {

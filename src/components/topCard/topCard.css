@@ -1,0 +1,39 @@
+.topCard {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 12px #18191b;
+  border-radius: 8px;
+  margin: 30px 60px;
+  padding: 15px 100px;
+  color: aliceblue;
+}
+
+img {
+  height: 50px;
+  margin-right: 8px;
+  width: auto;
+}
+
+.coinPhoto {
+  display: flex;
+  align-items: center;
+}
+
+.topCard .price {
+  font-size: 18px;
+}
+
+.topCard:hover {
+  transform: scale(1.04);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: rgb(20, 51, 70);
+}
+
+@media screen and (max-width: 480px) {
+  .topCard {
+    border-radius: 6px;
+    margin: 30px 10px;
+    padding: 10px 40px;
+  }
+}

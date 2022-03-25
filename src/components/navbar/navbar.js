@@ -16,7 +16,6 @@ const Navbar = () => {
           Markets
         </Link>
         <LoginButton />
-
         <div>
           <DropDown />
         </div>
