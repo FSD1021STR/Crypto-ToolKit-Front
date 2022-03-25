@@ -57,11 +57,11 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 1000px) {
   .navbar {
     height: 70px;
     width: 100%;
-    background-color: grey;
+    background-color: rgb(10, 26, 36);
   }
 
   .logo {
