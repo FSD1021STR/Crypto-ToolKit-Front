@@ -1,14 +1,9 @@
-table {
-  width: 95%;
-
-  margin: 10px auto;
-}
-td {
+.td {
   padding: 10px;
   font-size: 13px;
 }
 
-img {
+.coinPhoto {
   height: 30px;
 }
 
@@ -20,12 +15,12 @@ img {
 }
 
 @media screen and (min-width: 700px) {
-  td {
+  .td {
     padding: 15px;
     font-size: 18px;
   }
 
-  img {
+  .coinPhoto {
     height: 40px;
   }
 }

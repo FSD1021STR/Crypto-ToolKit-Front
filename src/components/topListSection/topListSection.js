@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import TopCard from "../topCard/topCard";
+import CoinsTable from "../coinsTable/coinsTable";
+// import TopCard from "../topCard/topCard";
 import "./topListSection.css";
 
 const TopListSection = () => {
@@ -17,8 +18,7 @@ const TopListSection = () => {
     )
       .then((response) => response.json())
       .then((json) => {
-        setTopCoins(json.Data);
-        console.log(json.Data);
+        setTopCoins(json);
       });
   }, []);
 
@@ -26,33 +26,7 @@ const TopListSection = () => {
     <section className="topList">
       <h2>Top List</h2>
       <div className="coinsItem">
-        <table>
-          <thead>
-            <tr>
-              <th>Img</th>
-              <th>FullName</th>
-              <th>Name</th>
-              <th>Id</th>
-              <th>24h Change</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody className="topCoins">
-            {topCoins?.map((coin) => {
-              return (
-                <TopCard
-                  key={coin.CoinInfo.Id}
-                  ImageUrl={`https://www.cryptocompare.com${coin.CoinInfo.ImageUrl}`}
-                  FullName={coin.CoinInfo.FullName}
-                  Name={coin.CoinInfo.Name}
-                  Id={coin.CoinInfo.Id}
-                  Change24h={coin.DISPLAY.USD.CHANGEPCT24HOUR}
-                  Price={coin.RAW.USD.PRICE}
-                />
-              );
-            })}
-          </tbody>
-        </table>
+        <CoinsTable coins={topCoins} />
       </div>
     </section>
   );

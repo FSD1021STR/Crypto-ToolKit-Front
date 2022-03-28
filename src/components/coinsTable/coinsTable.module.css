@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  margin: 30px auto;
+  background-color: rgb(10, 26, 36);
+  border-radius: 30px;
+  color: #ffffff;
+}
+.table {
+  text-align: left;
+  border-collapse: collapse;
+
+  width: 95%;
+
+  margin: 10px auto;
+}
+
+.th {
+  padding: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 700px) {
+  .th {
+    padding: 15px;
+    font-size: 18px;
+  }
+}
