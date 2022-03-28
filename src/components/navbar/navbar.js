@@ -3,16 +3,20 @@ import { Link } from "react-router-dom";
 import logo from "../../images/crypto-logo.png";
 import DropDown from "../dropDown.mobile/dropDown.mobile";
 import LoginButton from "../loginButton/loginButton";
-import "./navbar.css";
+import styles from "./navbar.module.css";
 const Navbar = () => {
   return (
-    <div className="navbar">
-      <img className="logo" src={logo} alt="imagen principal de la página" />
-      <div className="links">
-        <Link to="/" className="link">
+    <div className={styles.navbar}>
+      <img
+        className={styles.logo}
+        src={logo}
+        alt="imagen principal de la página"
+      />
+      <div className={styles.links}>
+        <Link to="/" className={styles.link}>
           Home
         </Link>
-        <Link to="/markets" className="link">
+        <Link to="/markets" className={styles.link}>
           Markets
         </Link>
         <LoginButton />
