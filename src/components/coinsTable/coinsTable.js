@@ -1,23 +1,24 @@
 import React from "react";
-import TopCard from "./../topCard/topCard";
+import CoinRow from "../coinRow/coinRow";
+import styles from "./coinsTable.module.css";
 
 const CoinsTable = ({ coins }) => {
   return (
-    <table>
+    <table className={styles.table}>
       <thead>
         <tr>
-          <th>Img</th>
-          <th>FullName</th>
-          <th>Name</th>
-          <th>Id</th>
-          <th>24h Change</th>
-          <th>Price</th>
+          <th className={styles.th}>Img</th>
+          <th className={styles.th}>FullName</th>
+          <th className={styles.th}>Name</th>
+          <th className={styles.th}>Id</th>
+          <th className={styles.th}>24h Change</th>
+          <th className={styles.th}>Price</th>
         </tr>
       </thead>
-      <tbody className="topCoins">
+      <tbody className={styles.container}>
         {coins?.map((coin) => {
           return (
-            <TopCard
+            <CoinRow
               key={coin.id}
               ImageUrl={coin.imageUrl}
               FullName={coin.name}
