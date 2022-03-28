@@ -1,39 +1,37 @@
 .topList {
   width: 100%;
-  margin: auto;
+  margin: 30px auto;
   background-color: rgb(10, 26, 36);
   border-radius: 30px;
-}
-
-.topList h2 {
-  display: flex;
-  justify-content: center;
   color: #ffffff;
-  font-size: 60px;
+}
+h2 {
+  font-size: 40px;
+  padding-left: 55px;
+  padding-top: 20px;
 }
 
-.heading {
-  display: flex;
-  justify-content: space-between;
-
-  border-radius: 8px;
-  margin: 30px 60px;
-  padding: 10px 100px;
-  color: rgb(89, 91, 92);
-  font-size: 18px;
-}
-.heading .coin-price {
-  color: green;
+.coinsItem {
 }
 
-@media screen and (max-width: 480px) {
-  .topList h2 {
-    font-size: 40px;
+table {
+  text-align: left;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 700px) {
+  th {
+    padding: 15px;
+    font-size: 18px;
   }
 
-  .heading {
-    border-radius: 6px;
-    margin: 30px 10px;
-    padding: 10px 40px;
+  img {
+    height: 40px;
   }
 }
