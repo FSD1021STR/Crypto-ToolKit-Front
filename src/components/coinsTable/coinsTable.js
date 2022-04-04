@@ -13,6 +13,7 @@ const CoinsTable = ({ coins }) => {
           <th className={styles.th}>Id</th>
           <th className={styles.th}>24h Change</th>
           <th className={styles.th}>Price</th>
+          <th className={styles.th}>Fav</th>
         </tr>
       </thead>
       <tbody className={styles.container}>
@@ -20,12 +21,12 @@ const CoinsTable = ({ coins }) => {
           return (
             <CoinRow
               key={coin.id}
-              ImageUrl={coin.imageUrl}
-              FullName={coin.name}
-              Name={coin.symbol}
-              Id={coin.id}
-              Change24h={coin.change24h}
-              Price={coin.price}
+              imageUrl={coin.imageUrl}
+              fullName={coin.name}
+              symbol={coin.symbol}
+              id={coin.id}
+              change24h={coin.change24h}
+              price={coin.price}
             />
           );
         })}

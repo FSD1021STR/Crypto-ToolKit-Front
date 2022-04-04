@@ -1,4 +1,7 @@
 import styles from "./coinRow.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {} from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
 
 const CoinRow = (props) => {
   const priceSyle = () => {
@@ -9,15 +12,18 @@ const CoinRow = (props) => {
   return (
     <tr className={styles.topCard}>
       <td className={styles.td}>
-        <img alt="cryto" className={styles.coinPhoto} src={props.ImageUrl} />
+        <img alt="cryto" className={styles.coinPhoto} src={props.imageUrl} />
       </td>
-      <td className={styles.td}>{props.FullName}</td>
-      <td className={styles.td}>{props.Name}</td>
-      <td className={styles.td}>{props.Id}</td>
+      <td className={styles.td}>{props.fullName}</td>
+      <td className={styles.td}>{props.symbol}</td>
+      <td className={styles.td}>{props.id}</td>
       <td className={styles.td} style={priceSyle()}>
-        {props.Change24h}
+        {props.change24h} %
       </td>
-      <td className={styles.td}> $ {props.Price}</td>
+      <td className={styles.td}> $ {props.price}</td>
+      <td className={styles.td}>
+        <FontAwesomeIcon icon={faHeart} />
+      </td>
     </tr>
   );
 };
