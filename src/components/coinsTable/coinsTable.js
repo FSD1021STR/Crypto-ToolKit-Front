@@ -13,6 +13,7 @@ const CoinsTable = ({ coins }) => {
           <th className={styles.th}>Id</th>
           <th className={styles.th}>24h Change</th>
           <th className={styles.th}>Price</th>
+          <th className={styles.th}>Fav</th>
         </tr>
       </thead>
       <tbody className={styles.container}>

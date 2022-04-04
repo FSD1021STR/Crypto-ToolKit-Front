@@ -1,4 +1,6 @@
 import styles from "./coinRow.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
 
 const CoinRow = (props) => {
   const priceSyle = () => {
@@ -15,9 +17,12 @@ const CoinRow = (props) => {
       <td className={styles.td}>{props.Name}</td>
       <td className={styles.td}>{props.Id}</td>
       <td className={styles.td} style={priceSyle()}>
-        {props.Change24h}
+        {props.Change24h} %
       </td>
       <td className={styles.td}> $ {props.Price}</td>
+      <td className={styles.td}>
+        <FontAwesomeIcon icon={faHeart} />
+      </td>
     </tr>
   );
 };
