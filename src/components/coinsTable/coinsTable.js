@@ -1,3 +1,4 @@
+import { Link } from "@chakra-ui/react";
 import React from "react";
 import CoinRow from "../coinRow/coinRow";
 import styles from "./coinsTable.module.css";
@@ -18,15 +19,16 @@ const CoinsTable = ({ coins }) => {
       <tbody className={styles.container}>
         {coins?.map((coin) => {
           return (
-            <CoinRow
-              key={coin.id}
-              ImageUrl={coin.imageUrl}
-              FullName={coin.name}
-              Name={coin.symbol}
-              Id={coin.id}
-              Change24h={coin.change24h}
-              Price={coin.price}
-            />
+            <Link to={`/coin/${coin.id}`} key={coin.id}>
+              <CoinRow
+                ImageUrl={coin.imageUrl}
+                FullName={coin.name}
+                Name={coin.symbol}
+                Id={coin.id}
+                Change24h={coin.change24h}
+                Price={coin.price}
+              />
+            </Link>
           );
         })}
       </tbody>
