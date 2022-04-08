@@ -15,19 +15,19 @@ const IntroSection = () => {
       </section>
 
       <section className={styles.section2}>
-        <div>
+        <div className={styles.infotitlecontainer}>
           <h2 className={styles.title}>$76 billion</h2>
           <p>24h trading volume on Binance exchange</p>
         </div>
-        <div>
+        <div className={styles.infotitlecontainer}>
           <h2 className={styles.title}>600+</h2>
           <p>Cryptocurrencies listed</p>
         </div>
-        <div>
+        <div className={styles.infotitlecontainer}>
           <h2 className={styles.title}>90 million</h2>
           <p>Registered users who trust Binance</p>
         </div>
-        <div>
+        <div className={styles.infotitlecontainer}>
           <h2 className={styles.title}>0.10%</h2>
           <p>Lowest transaction fees</p>
         </div>

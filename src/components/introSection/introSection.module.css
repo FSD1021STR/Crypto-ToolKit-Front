@@ -38,6 +38,13 @@ body {
 .section2 p {
   font-size: 18px;
   text-align: center;
+  
+}
+
+.infotitlecontainer {
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
 }
 
 .title {
