@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import CoinView from "./components/coinView/CoinView";
+import CoinView from "./components/coinView/Coinview";
 import SignIn from "./components/login/SignIn";
 import SignUp from "./components/login/SignUp";
 import Home from "./pages/home/home";
