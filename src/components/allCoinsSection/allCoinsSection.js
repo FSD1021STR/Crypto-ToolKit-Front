@@ -11,7 +11,7 @@ const AllCoins = () => {
       headers: { "Content-Type": "application/json" },
     };
 
-    fetch(`https://crypto-toolkit.herokuapp.com/coins`, requestOptions)
+    fetch(`http://localhost:8000/coins`, requestOptions)
       .then((response) => response.json())
       .then((json) => {
         setAllCoins(json);

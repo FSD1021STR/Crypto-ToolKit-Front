@@ -10,9 +10,11 @@ const CoinView = () => {
   const [coin, setCoin] = useState({});
 
   useEffect(() => {
-    fetch(`https://crypto-toolkit.herokuapp.com/coins/${params.symbol}`)
+    fetch(`http://localhost:8000/coins/${params.symbol}`)
       .then((res) => res.json())
-      .then((json) => setCoin(json));
+      .then((json) => {
+        setCoin(json);
+      });
   }, []);
 
   return (
@@ -20,7 +22,7 @@ const CoinView = () => {
       <div className={styles.coinInfo}>
         <img className={styles.coinImage} src={coin.imageUrl} alt={coin.name} />
         <h1>{coin.name}</h1>
-        <p className={styles.description}> </p>
+        {/* <p className={styles.description}></p> */}
       </div>
     </section>
   );
