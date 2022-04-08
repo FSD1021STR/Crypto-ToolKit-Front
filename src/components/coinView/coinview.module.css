@@ -1,5 +1,79 @@
+section{
+    background-color: var( --color-background);
+
+}
+
+.allInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .coinView{
+    padding: 30px;
     width: 100%;
     height: 100vh;
-    background-color: var( --color-background);
+}
+
+.symbolInfo{
+    padding: 30px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ;
+    gap:10px
+}
+
+.coinImage{
+    width: 70px;
+    height: 70px;
+}
+
+h1{
+    margin: 0;
+}
+
+.symbol{
+    color: rgb(121, 120, 120);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width:1000px) {
+
+    .coinInfo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .allInfo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        box-shadow: 0px 0px 4px 0px rgb(255, 255, 255);
+        transition: all 0.7s ease;
+        width: 500px;
+
+
+    }
+    .symbolInfo{
+        flex-direction: column;
+        border-radius: 5px;
+        gap: 20px;
+    }
+
+    .allInfo    :hover{
+      transform: scaleX( 1.1);
+
+    }
+
+
+    
 }
