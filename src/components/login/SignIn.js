@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import style from "./login.module.css";
 
 const SignIn = () => {
@@ -6,10 +7,10 @@ const SignIn = () => {
     <>
       <div className={style.wrapper}>
         <div className={style.container}>
-          <div className={style.signup}>
+          <div className={style.login_header}>
             <Link to="/signup">Sing Up</Link>
           </div>
-          <div className="login">
+          <div className={style.login_header}>
             <Link to="/signin">Log In</Link>
           </div>
           <form>
@@ -18,14 +19,13 @@ const SignIn = () => {
                 type="email"
                 name="email"
                 placeholder="Your Email Address"
-                className="input"
               ></input>
               <input
                 type="password"
                 name="password"
                 placeholder="Password"
-                className="input"
               ></input>
+              <p> you forgot your password ?</p>
               <button type="submit" className={style.btn}>
                 logIn
               </button>

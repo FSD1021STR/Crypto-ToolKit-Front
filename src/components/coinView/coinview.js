@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./CoinView.module.css";
+import styles from "./coinView.module.css";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 

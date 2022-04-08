@@ -6,10 +6,10 @@ const SignUp = () => {
     <>
       <div className={style.wrapper}>
         <div className={style.container}>
-          <div className={style.signup}>
+          <div className={style.login_header}>
             <Link to="/signup">Sing Up</Link>
           </div>
-          <div className="login">
+          <div className={style.login_header}>
             <Link to="/signin">Login</Link>
           </div>
           <form>
